@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a , li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    transition: .4s;
+}
+
+a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+#linkInicio {
+    color: #576c7c; 
+    transition: .4s;
+}
+
+#linkInicio:hover {
+    color: #333;
+}
+
+#logo:hover {
+    box-shadow: 0 0 2rem rgba(255, 255, 255, .2);
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#volverMenu {
+    font-size: 30px;
+    margin: 5px 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    transition: .4s;
+}
+
+#volverMenu:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    color: white;
+}
+
+.footerContainer a {
+    margin: 0px 20px;
+}
+
+#volverHaciaArriba {
+    font-size: 14px;
+    float: right;
+    margin: 20px;
+}
+
+.headerContainer {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+} 
+
+.hamburger, .cerrarHamburger {
+    display: none;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+}
+
+.categorias {
+    color: white;
+    margin: 10px;
+    box-shadow: 0 4px 2px -2px rgba(255, 255, 255, .2);
+}
+.entradas, .bebidas, .postres, .principal  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 50px;
+}
+
+.entradas img, .bebidas img, .postres img, .principal img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.entradas img:hover, .bebidas img:hover, .postres img:hover, .principal img:hover {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba(255, 255, 255, .3);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imagen-light {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show {
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform .3s .2s;
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#bastonesDeMozzarella, #nachos, #rabas, #costillar, #wrap, #ñoquis, #cervezas, 
+#gaseosas, #vinos, #cheesecake, #mousseDeChocolate, #redVelvet {
+    color: white;
+    text-align: center;
+}
+
+#descripcionBastonesDeMozarrela, #descripcionNachos, #descripcionRabas, #descripcionCostillar, #descripcionWrap,
+#descripcionÑoquis, #descripcionCervezas, #descripcionGaseosas, #descripcionVinos, #descripcionCheescake,
+#descripcionMousseDeChocolate, #descripcionRedVelvet {
+    display: none;
+}
+
+@media screen and (max-width:420px){
+
+    body {
+        min-width: 360px;
+    }
+
+    .hamburger, 
+    .cerrarHamburger {
+        display: block;
+        scale: 2;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0; 
+        bottom: 0;
+        background-color: #333;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    .entradas, .bebidas, .postres, .principal  {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 50px;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        margin: 10px 20px;
+        color: white;
+    }
+
+    .footerContainer a {
+        margin: 0px 5px;
+    }
+
+    .agregar-imagen {
+        width: 95%;
+    }
+}
+
