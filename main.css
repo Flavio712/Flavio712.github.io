@@ -96,14 +96,14 @@ footer div {
     margin: 10px;
     box-shadow: 0 4px 2px -2px rgba(255, 255, 255, .2);
 }
-.entradas, .bebidas, .postres, .principal  {
+.ensaladas, .vegan, .postres, .principal  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin: 50px;
 }
 
-.entradas img, .bebidas img, .postres img, .principal img {
+.ensaladas img, .vegan img, .postres img, .principal img {
     object-fit: cover;
     width: 250px;
     height: 250px;
@@ -112,7 +112,7 @@ footer div {
     transition: .5s;
 }
 
-.entradas img:hover, .bebidas img:hover, .postres img:hover, .principal img:hover {
+.ensaladas img:hover, .vegan img:hover, .postres img:hover, .principal img:hover {
     object-fit: cover;
     width: 250px;
     height: 250px;
@@ -161,8 +161,12 @@ footer div {
     cursor: pointer;
 }
 
-#bastonesDeMozzarella, #nachos, #rabas, #costillar, #wrap, #ñoquis, #cervezas, 
-#gaseosas, #vinos, #cheesecake, #mousseDeChocolate, #redVelvet {
+#coleslaw, #ensaladaCapresseConPasta, #ensaladaCesar, #ensaladaDtox, #ensaladaPanzanella, 
+#ensaladaTabule, #melanzana, #bifeDeChorizo, #bondiola, #pastaRellenaSorrentinos, #polloAlCurry, 
+#risottoCalabaza, #risottoFunghi, #vacioSouzVide, #wokDePollo, #wrapDeCarne, 
+#wrapDePolloYVegetales, #ñoquisALaRomana, #veganWok, #cheesecakeFrutosRojos, #mousseDeChocolate, 
+#balcarce, #cheesecakeMaracuya, #cheesecakeOreo, #brownie, #carrotCake, #chocotorta, 
+#crumbleDeManzana, #lemonPie, #tiramisu {
     color: white;
     text-align: center;
 }
@@ -213,7 +217,7 @@ footer div {
         gap: 1rem;
     }
 
-    .entradas, .bebidas, .postres, .principal  {
+    .ensaladas, .vegan, .postres, .principal  {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
