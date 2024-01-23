@@ -169,7 +169,7 @@ footer div {
     border-radius: 1rem;
     padding: 5px;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
 }
 
 .btn:hover {
