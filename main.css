@@ -135,6 +135,7 @@ footer div {
     align-items: center;
     transform: translate(100%);
     transition: transform .2s ease-in-out;
+    color: white;
 }
 
 .show {
@@ -161,6 +162,21 @@ footer div {
     cursor: pointer;
 }
 
+.btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: black;
+}
+
 #coleslaw, #ensaladaCapresseConPasta, #ensaladaCesar, #ensaladaDtox, #ensaladaPanzanella, 
 #ensaladaTabule, #melanzana, #bifeDeChorizo, #bondiola, #pastaRellenaSorrentinos, #polloAlCurry, 
 #risottoCalabaza, #risottoFunghi, #vacioSouzVide, #wokDePollo, #wrapDeCarne, 
@@ -171,10 +187,28 @@ footer div {
     text-align: center;
 }
 
-#descripcionBastonesDeMozarrela, #descripcionNachos, #descripcionRabas, #descripcionCostillar, #descripcionWrap,
-#descripcionÑoquis, #descripcionCervezas, #descripcionGaseosas, #descripcionVinos, #descripcionCheescake,
-#descripcionMousseDeChocolate, #descripcionRedVelvet {
+
+.descripcionPlatoColeslaw, .descripcionPlatoEnsaladaCapresseConPasta, 
+.descripcionPlatoEnsaladaCesar, .descripcionPlatoEnsaladaDtox, .descripcionPlatoEnsaladaPanzanella, 
+.descripcionPlatoEnsaladaTabule, .descripcionPlatoMelanzana, .descripcionPlatoBifeDeChorizo, .descripcionPlatoBondiola, 
+.descripcionPlatoPastaRellenaSorrentinos, .descripcionPlatoPolloAlCurry, .descripcionPlatoRisottoCalabaza, .descripcionPlatoRisottoFunghi, 
+.descripcionPlatoVacioSouzVide, .descripcionPlatoWokDePollo, .descripcionPlatoWrapDeCarne, .descripcionPlatoWrapDePolloYVegetales, 
+.descripcionPlatoÑoquisALaRomana, .descripcionPlatoVeganWok, .descripcionPlatoCheesecakeFrutosRojos, .descripcionPlatoMousseDeChocolate, 
+.descripcionPlatoBalcarce, .descripcionPlatoCheesecakeMaracuya, .descripcionPlatoCheesecakeOreo, .descripcionPlatoBrownie, 
+.descripcionPlatoCarrotCake, .descripcionPlatoChocotorta, .descripcionPlatoCrumbleDeManzana, .descripcionPlatoLemonPie, 
+.descripcionPlatoTiramisu{
     display: none;
+} 
+
+.showDescripcionPlatoColeslaw, .showDescripcionEnsaladaCapresseConPasta, .showDescripcionEnsaladaCesar, .showDescripcionEnsaladaDtox, 
+.showDescripcionEnsaladaPanzanella, .showDescripcionEnsaladaTabule, .showDescripcionMelanzana, .showDescripcionBifeDeChorizo, 
+.showDescripcionBondiola, .showDescripcionPastaRellenaSorrentinos, .showDescripcionPolloAlCurry, .showDescripcionRisottoCalabaza, 
+.showDescripcionRisottoFunghi, .showDescripcionVacioSouzVide, .showDescripcionWokDePollo, .showDescripcionWrapDeCarne, 
+.showDescripcionWrapDePolloYVegetales, .showDescripcionÑoquisALaRomana, .showDescripcionVeganWok, .showDescripcionCheesecakeFrutosRojos, 
+.showDescripcionMousseDeChocolate, .showDescripcionBalcarce, .showDescripcionCheesecakeMaracuya, .showDescripcionCheesecakeOreo, 
+.showDescripcionBrownie, .showDescripcionCarrotCake, .showDescripcionChocotorta, .showDescripcionCrumbleDeManzana, 
+.showDescripcionLemonPie, .showDescripcionTiramisu  {
+    display: block;
 }
 
 @media screen and (max-width:420px){
