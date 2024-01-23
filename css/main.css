@@ -144,7 +144,7 @@ footer div {
 
 .agregar-imagen {
     object-fit: cover;
-    width: 60%;
+    width: 70%;
     border-radius: 10px;
     transform: scale(1);
     transition: transform .3s .2s;
@@ -271,5 +271,6 @@ footer div {
 
     .agregar-imagen {
         width: 95%;
+        height: 40%;
     }
 }
