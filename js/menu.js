@@ -1,11 +1,13 @@
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".nav");
 
-abrir.addEventListener("click", ()=> {
-    nav.classList.add("visible");
+hamburger.addEventListener("click", ()=> {
+    menu.classList.toggle("spread");
 })
 
-cerrar.addEventListener("click", ()=> {
-    nav.classList.remove("visible");
+window.addEventListener("click", (e)=> {
+    if(menu.classList.contains("spread") && e.target != menu && e.target != hamburger){
+        menu.classList.toggle("spread");
+    }
+    
 })
