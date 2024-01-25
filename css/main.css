@@ -173,14 +173,6 @@ footer div {
     cursor: pointer;
 }
 
-.closeMobile {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    width: 40px;
-    cursor: pointer;
-}
-
 .btn {
     color: white;
     background-color: transparent;
@@ -267,5 +259,10 @@ footer div {
     .agregar-imagen {
         width: 95%;
         height: 40%;
+    }
+
+    .close {
+        bottom: 100px;
+        left: 46%;
     }
 }
