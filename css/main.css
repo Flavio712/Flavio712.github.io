@@ -245,6 +245,15 @@ footer div {
         margin: 50px;
     }
 
+    .ensaladas img, .vegan img, .postres img, .principal img {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 1rem;
+        transition: .5s;
+    }
+
     footer div {
         display: flex;
         justify-content: center;
