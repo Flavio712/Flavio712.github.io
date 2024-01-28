@@ -72,17 +72,11 @@ body {
 }
 
 #volverMenu {
-    font-size: 30px;
+    width: 30px;
     margin: 5px 20px;
     background: transparent;
     border: none;
-    color: white;
     transition: .4s;
-}
-
-#volverMenu:hover {
-    cursor: pointer;
-    color: grey;
 }
 
 footer div {
